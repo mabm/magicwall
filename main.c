@@ -5,7 +5,7 @@
 ** Login   <jobertomeu@epitech.net>
 **
 ** Started on  Mon Sep  7 14:53:35 2015 Joris Bertomeu
-** Last update Mon Sep  7 14:53:36 2015 Joris Bertomeu
+** Last update Mon Sep  7 14:56:15 2015 Joris Bertomeu
 */
 
 #include	<stdio.h>
@@ -18,8 +18,8 @@ int		main()
   IplImage	*image;
   CvCapture	*capture;
 
-  //capture = cvCreateFileCapture("/path/to/your/video/test.avi");
-  capture = cvCreateCameraCapture(CV_CAP_ANY);
+  capture = cvCreateFileCapture("./bird.avi");
+  //capture = cvCreateCameraCapture(CV_CAP_ANY);
   if (!capture)
     {
       printf("Ouverture du flux vidéo impossible !\n");
